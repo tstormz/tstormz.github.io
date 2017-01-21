@@ -1,0 +1,206 @@
+		* {
+				margin: 0;
+				padding: 0;
+			}
+			.clearfix::after {
+    			content: "";
+    			clear: both;
+    			display: table;
+			}
+			::selection {
+				background-color: #feb44e;
+				color: #111;
+			}
+			body {
+				background-color: #111;
+				position: relative;
+				z-index: 0;
+			}
+			#wrapper {
+				position: relative;
+				z-index: 1;
+				background-color: #111;
+			}
+			.container {
+				width: 900px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			header .container {
+				white-space: nowrap;
+			}
+			header {
+				position: fixed;
+				z-index: 2;
+				width: 100%;
+				border-bottom: 1px solid #a56a19;
+			}
+			header h1 {
+				font-family: "Great Vibes", cursive;
+				display: inline-block;
+				color: #111;
+				width: 50%;
+				padding: 0.25em 0;
+				font-weight: 500;
+			}
+			header ul {
+				display: inline-block;
+				width: 50%;
+				text-align: right;
+			}
+			header li {
+				display: inline;
+				padding: 0 15px;
+			}
+			header a {
+				font-family: "Source Sans Pro", sans-serif;
+				text-decoration: none;
+				color: #111;
+			}
+			header a:hover {
+				color: #13436b;
+				color: #3a74a4;
+			}
+			section#welcome {
+				text-align: left;
+			}
+			section#welcome h2 {
+				padding-top: 3em;
+			}
+			section#welcome div {
+				display: inline-block;
+				width: 85%;
+			}
+			section#welcome div#contact {
+				width: 10%;
+				padding: 0 2.5%;
+				vertical-align: top;
+				text-align: center;
+			}
+			div#contact ul {
+				font-size: 18px;
+				list-style: none;
+			}
+			div#contact li {
+				padding: 0.5em 0;
+			}
+			div#contact img {
+				height: 32px;
+			}
+			img#avatar {
+				height: 230px;
+				border-radius: 5px;
+				float: left;
+				margin-right: 30px;
+				margin-bottom: 15px;
+			}
+			h2, h3 {
+				font-family: "Open Sans", sans-serif;
+				font-size: 30px;
+				padding: 1em 0;
+				color: #bfbfbf;
+			}
+			h3 {
+				font-size: 24px;
+			}
+			p {
+				font-family: "Georgia";
+				color: #868686;
+				font-size: 16px;
+				line-height: 2em;
+				text-align: justify;
+			}
+			div p {
+				text-align: left;
+			}
+			section {
+				text-align: center;
+				font-size: 0;
+				padding: 30px 0;
+			}
+			section#aboutMe div, section#projects div {
+				float: left;
+				width: 33%;
+			}
+			section#courses {
+				width: 100%;
+				font-size: 0;
+			}
+			section#courses .splitPane {
+				display: inline-block;
+				width: 50%;
+			}
+			section#courses .widePane, section#courses .splitPane,
+			section#courses p {
+				padding: 30px 0;
+			}
+			section#courses .widePane h3 {
+				color: #111;
+			}
+			section#courses .widePane p {
+				color: #111;
+				padding: 30px 0;
+			}
+			section#courses p + p {
+				padding-bottom: 2em;
+			}
+			section#courses p {
+				margin: 0 3em;
+			}
+			section#projects img {
+				height: 64px;
+			}
+			section#projects div p {
+				padding: 0 1.5em;
+				text-align: justify;
+				padding-bottom: 3em;
+			}
+			footer {
+				position: relative;
+				z-index: -2;
+				font-size: 18px;
+				height: 128px;
+				color: #111;
+			}
+			footer ul {
+				color: #111;
+				font-size: 18px;
+				padding: 3em;
+				position: fixed;
+				bottom: 0;
+				z-index: -1;
+				list-style: none;
+			}
+			footer ul li {
+				font-size: 18px;
+				display: inline;
+				font-family: "Georgia", serif;
+			}
+			.border-top {
+				border-top: 1px solid #bfbfbf;
+			}
+			.border-right {
+				border-right: 1px solid #bfbfbf;
+			}
+			.border-bottom {
+				border-bottom: 1px solid #bfbfbf;
+			}
+			.border-left {
+				border-left: 1px solid #bfbfbf;
+			}
+			.orangeBg {
+				background-color: #feb44e;
+			}
+			.green{
+				background-color: #35ad7e;
+			}
+			.pink{
+				background-color: #e54673;
+			}
+			.purple{
+				color: #4b49b2;
+			}
+			.yellow{
+				color: #fed34e;
+			}
+
