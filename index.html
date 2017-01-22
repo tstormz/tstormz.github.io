@@ -3,6 +3,22 @@
 		<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Open+Sans|Source+Sans+Pro" rel="stylesheet">
 		<link href='style.css' rel="stylesheet"/>
 		<title>Travis Hafner - Software Engineer</title>
+		<!-- Google Analytics -->
+		<script>
+  			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  			ga('create', 'UA-90716742-1', 'auto');
+ 		 	ga('send', 'pageview');
+		</script>
+		<!-- Show Parallel Content -->
+		<script>
+			function show() {
+				document.getElementById("parallel").innerHTML = "foobar";
+			}
+		</script>
 	</head>
 	<body>
 		<header class='orangeBg'>
@@ -22,7 +38,7 @@
 			<div>
 				<p style='text-align:justify'>
 					<img id='avatar' src='images/github_profile_sm.jpg' />
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit consectetur urna, ut elementum orci scelerisque ac. In consectetur, turpis nec ornare scelerisque, libero ex cursus elit, nec scelerisque urna dui ut tortor. Nam auctor, eros sit amet blandit luctus, neque enim maximus neque, quis placerat nunc metus at nunc. Proin fermentum ornare libero ac molestie. Nam nisi erat, auctor vitae maximus vitae, pulvinar vel enim. Morbi viverra</p>
+					Hello, there! I am currently a SUNY Oswego student only one semester away from getting my B.S. in Software Engineering. This degree provided me with a formal background in Computer Science, with an extended core of SE principles such as Software Quality and Development. My focus was on Middleware topics such as Parallel Computing and Computer Networks. I consider myself to be result driven and eager to learn new skills. I especially love learning new programming languages.</p>
 			</div>
 			<div id='contact'>
 				<ul>
@@ -37,44 +53,51 @@
 			<div>
 				<img src='images/wrench.png'>
 				<h3>Skills</h3>
-				<p>Considerable knowledge of Java, C, C++/.NET, and Ruby<br/>
-Familiarity with tools such as Maven, JUnit, Antlr, and Git<br/>
-Comfortable in Windows or Linux environments</p>
+				<ul>
+					<li>Considerable knowledge of Java, C, C++/.NET, and Ruby</li>
+					<li>Familiarity with tools such as Maven, JUnit, Antlr, and Git</li>
+					<li>Comfortable in Windows or Linux environments</li>
+				</ul>
 			</div>
 			<div>
 				<img src='images/diamond.png'>
 				<h3>Style</h3>
-				<p>I am a strong believer in the DRY principle of develop- ment. I prefer explicit typing over inference when it improves readability, and think code should be heavily documented.</p>
+				<p>I am a strong believer in the DRY principle of software development. I prefer explicit typing over inference when it improves readability, and think code should be heavily documented.</p>
 			</div>
 			<div>
 				<img src='images/pie-chart.png'>
 				<h3>Activity</h3>
-				<p>Dean’s list Spring 2014, Fall 2014, and Fall 2016<br />
-Member of the Computer Science Association and IEEE at SUNY Oswego</p>
+				<ul>
+					<li>Dean's list Spring 2014, Fall 2014, and Fall 2016</li>
+					<li>Member of the Computer Science Association and IEEE at SUNY Oswego</li>
+				</ul>
 			</div>
 		</section>
 		<section id='courses'>
-			<h2>Some Of The Subjects I Studied</h2>
+			<h2>Some of the Subjects I Studied</h2>
 			<div class='widePane green'>
 				<div class='container'>
 					<h3>Computer Networking</h3>
-					<p><img src='images/TinyFTP.png' alt='TinyFTP' style='float:left;padding:0 2em 1em 0' />consectetur adipiscing elit. Pellentesque suscipit consectetur urna, ut elementum orci scelerisque ac. In consectetur, turpis nec ornare scelerisque consectetur adipiscing elit. Pellentesque suscipit consectetur urna, ut elementum orci scelerisque ac. In consectetur, turpis nec ornare scelerisque consectetur adipiscing elit. Pellentesque suscipit consectetur urna, ut elementum orci scelerisque ac. In consectetur, turpis nec ornare scelerisque consectetur adipiscing elit. Pellentesque suscipit consectetur urna, ut elementum orci scelerisque ac. In consectetur, turpis nec ornare scelerisque</p>
+					<p>
+						<img src='images/TinyFTP.png' alt='TinyFTP' style='float:left;padding:0 2em 1em 0' />
+						This course was the most useful because the material is so practical. We worked our way from how data is sent over the wire, all the way to distributed systems! We learned about how packets are routed, how internets scale better than ethernets, and various protocols like IP, ARP, and DHCP. We discussed TCP in depth and wrote our own Sliding Windows application using UDP datagrams as a programming exercise (TinyFTP seen to the left). We were also introduced to the <a href='https://raft.github.io/'>Raft consensus algorithm</a> as an alternative to <a href='http://cassandra.apache.org/'>Cassandra</a>, and where it fit in the CAP theorem.
+					</p>
 				</div>
 			</div>
 			<div id='biSection' class='container'>
 				<div class='splitPane'>
-					<h3 class='purple'>Compiler Construction</h3>
-					<p>consectetur adipiscing elit. Pellentesque suscipit consectetur urna, ut elementum orci scelerisque ac. In consectetur, turpis nec ornare scelerisque consectetur adipiscing elit. Pellentesque suscipit consectetur urna, ut elementum orci scelerisque ac. In consectetur, turpis nec ornare scelerisque</p>
+					<h3 class='purple'>Data Structures &amp; Algorithms</h3>
+					<p>This was my first experience with low level programming. We started with an introduction to bit manipulation by studying the BitSet data structure, which prepared us for examining hash functions. From there we looked at balanced trees like Red Black trees and the BTree, which we <a href='https://github.com/tstormz/BTree'>created from scatch as a project</a>. Lastly, we looked at graphs and graph algorithms like Dijkstra's spanning tree.</p>
 				</div>
 				<div class='splitPane'>
-					<h3 class='yellow'>Systems Programming</h3>
-					<p>consectetur adipiscing elit. Pellentesque suscipit consectetur urna, ut elementum orci scelerisque ac. In consectetur, turpis nec ornare scelerisque consectetur adipiscing elit. Pellentesque suscipit consectetur urna, ut elementum orci scelerisque ac. In consectetur, turpis nec ornare scelerisque</p>
+					<h3 class='yellow'>Parallel Computing</h3>
+					<p id='parallel'>Αυτός ο βαθμός μου έδωσε ένα επίσημο υπόβαθρο στην Επιστήμη των Υπολογιστών, με μια εκτεταμένη πυρήνα των αρχών, όπως η ποιότητα και Λογισμικού. Στόχος μου ήταν σε θέματα όπως Παράλληλη Πληροφορική και Δίκτυα Υπολογιστών. Θεωρώ τον εαυτό μου στα αποτελέσματα ώστε να οδηγείται και πρόθυμοι να μάθουν νέες δεξιότητες. Αγαπώ ιδιαίτερα την εκμάθηση νέων γλωσσών προγραμματισμού.&nbsp;<a href='javascript:show()'>just kidding</a></p>
 				</div>
 			</div>
 			<div class='widePane pink'>
 				<div class='container'>
-					<h3>Parallel Programming</h3>
-					<p>consectetur adipiscing elit. Pellentesque suscipit consectetur urna, ut elementum orci scelerisque ac. In consectetur, turpis nec ornare scelerisque consectetur adipiscing elit. Pellentesque suscipit consectetur urna, ut elementum orci scelerisque ac. In consectetur, turpis nec ornare scelerisque consectetur adipiscing elit. Pellentesque suscipit consectetur urna, ut elementum orci scelerisque ac. In consectetur, turpis nec ornare scelerisque consectetur adipiscing elit. Pellentesque suscipit consectetur urna, ut elementum orci scelerisque ac. In consectetur, turpis nec ornare scelerisque</p>
+					<h3>System Programming</h3>
+					<p>This was my second low level course where I really started to develop my C proficiency. We first looked at the binary representation of IEEE Standard for floating point arithmitic. Secondly, we looked at reading assembly code generated by the C compiler, and used <a href='https://www.sourceware.org/gdb/'>gdb</a> to solve a series of puzzles known as the infamous <a href='http://csapp.cs.cmu.edu/2e/README-bomblab'>bomb lab</a>. After that nightmare, I completed the <a href='https://github.com/tstormz/CacheLab'>Cache Lab</a> that simulated hits and misses from a cache line. The most interesting thing I learned, however, was how to use a bit mask to extract the bits of interest (something I couldn't do in Java). Lastly, we looked at system processes and wrote a tiny shell, learning about signal interrupts, PIDs, background tasks, forking/reaping, and memory management.</p>
 				</div>
 			</div>
 		</section>
@@ -83,25 +106,36 @@ Member of the Computer Science Association and IEEE at SUNY Oswego</p>
 			<div>
 				<img src='images/c-logo-icon-28389.png' alt='C++' />
 				<h3>Airborne-CPS</h3>
-				<p>X-Plane plugin to provide Traffic Collision Avoidance System (TCAS) simulation writtin in Microsoft .Net C++</p>
+				<p>X-Plane plugin to provide a Traffic Collision Avoidance System (TCAS) simulation writtin in MSDN/C++. The plugin displays intruding aircraft on a graphical radar guage, calculates a point of collision, and provides vertical speed recommendations.</p>
 			</div>
 			<div>
 				<img src='images/ruby.png' alt='ruby' style='height:48px;padding:8px 0' />
 				<h3>TRAID</h3>
-				<p>A management system for tracking products/customers for the NYS Assistive Technology (TRAID) Program using Ruby on Rails</p>
+				<p>A management system for tracking products/customers for the NYS Technology Assistance Program (TRAID). Data is stored in a SQLite database using a relational DB schema and the Ruby on Rails framework.</p>
 			</div>
 			<div>
 				<img src='images/java-logo-vector.png' alt='java' />
-				<h3>BTree</h3>
-				<p>A web crawler that hashes word frequencies and stores them in a persistent BTree data structure using Java</p>
+				<h3>MiniJava</h3>
+				<p>A compiler for a smaller version on Java as specified by the <a href='http://www.cambridge.org/resources/052182060X/MCIIJ2e/grammar.htm'>Mini Java Grammar</a>, using Antlr4 for AST construction and Jasmin for code generation. Built in optionals for all data types were added as a language extension.</p>
 			</div>
 		</section>
 		</div><!-- wrapper -->
 		<footer class='orangeBg'>
 			<ul>
-				<li>Travis Hafner &copy; 2017</li>
-				<li><img src='images/GitHub-Mark-64px.png' alt='github' style='height:32px' /></li>
-				<li>icons designed by Maxim Basinski from Flat Icons</li>
+				<li id='footerContact'>
+					<span>
+						<a href='mailto:hafner@oswego.edu'>hafner@oswego.edu</a>
+					</span>
+					<span>
+						<img src='images/GitHub-Mark-64px.png' alt='github' style='height:32px' />
+						&nbsp;<a href='https://github.com/tstormz'>GitHub</a>
+					</span>
+					<span>
+						<img src='images/In-Black-66px-R.png' alt='linkedin' style='height: 32px' />
+						&nbsp;<a href='https://www.linkedin.com/in/travis-hafner-58548930'>LinkedIn</a>
+					</span>
+				<li>Website designed by Travis Hafner &copy; 2017</li>
+				<li style='color: #333;font-size:0.618em'>"About Me" icons designed by Maxim Basinski from <a href='http://www.flaticon.com/'>flaticon.com</a></span>
 			</ul>
 		</footer>
 	</body>

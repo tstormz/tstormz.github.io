@@ -27,6 +27,22 @@
 	 margin-left: auto;
 	 margin-right: auto;
  }
+ .orangeBg {
+	 background-color: #feb44e;
+ }
+ .green{
+	 background-color: #35ad7e;
+ }
+ .pink{
+	 background-color: #e54673;
+	 background-color: #f27498;
+ }
+ .purple{
+	 color: #4b49b2;
+ }
+ .yellow{
+	 color: #fed34e;
+ }
  header .container {
 	 white-space: nowrap;
  }
@@ -52,7 +68,7 @@
  }
  header li {
 	 display: inline;
-	 font-size: 1em;
+	 font-size: 0.888em;
 	 padding: 0 1em;
  }
  header a {
@@ -60,9 +76,21 @@
 	 text-decoration: none;
 	 color: #111;
  }
- header a:hover {
+ header a:hover, footer a {
 	 color: #13436b;
-	 color: #3a74a4;
+ }
+ a {
+	color: #3a74a4;
+ }
+ a:hover {
+ 	text-decoration: none;
+ }
+ div.green a {
+ 	color: #191873;
+ }
+ div.pink a {
+ 	color: #06492e;
+ 	color: #0b5a3a;
  }
  section#welcome {
 	 text-align: left;
@@ -105,14 +133,14 @@
  h3 {
 	 font-size: 1.618em;
  }
- p {
+ p, #aboutMe li {
 	 font-family: "Georgia";
 	 color: #868686;
 	 font-size: 1em;
 	 line-height: 1.813em;
 	 text-align: justify;
  }
- div p {
+ div.widePane p {
 	 text-align: left;
  }
  section {
@@ -127,6 +155,9 @@
  }
  section#aboutMe {
  	padding-top: 2.618em;
+ }
+ section#aboutMe ul {
+ 	list-style: square;
  }
  div#biSection, section#welcome {
 	 font-size: 0;
@@ -161,7 +192,7 @@
  section#projects img {
 	 height: 64px;
  }
- section#projects div p , section#aboutMe div p {
+ section#projects div p, section#aboutMe p, section#aboutMe ul {
 	 padding: 0 1.5em;
 	 text-align: justify;
 	 padding-bottom: 2.618em;
@@ -170,46 +201,27 @@
 	 position: relative;
 	 z-index: -2;
 	 font-size: 18px;
-	 height: 128px;
+	 height: 11.089em;
 	 color: #111;
+	 text-align: center;
  }
  footer ul {
 	 color: #111;
-	 padding: 3em;
+	 padding: 2.618em;
 	 position: fixed;
 	 bottom: 0;
 	 z-index: -1;
+	 width: 100%;
 	 list-style: none;
  }
- footer ul li {
-	 display: inline;
+ footer li {
 	 font-family: "Georgia", serif;
+	 text-align: center;
+	 padding: 0.236em 0;
  }
- .border-top {
-	 border-top: 1px solid #bfbfbf;
+ footer li span, li#footerContact {
+ 	padding: 1.618em;
  }
- .border-right {
-	 border-right: 1px solid #bfbfbf;
+ footer li span img {
+ 	vertical-align: middle;
  }
- .border-bottom {
-	 border-bottom: 1px solid #bfbfbf;
- }
- .border-left {
-	 border-left: 1px solid #bfbfbf;
- }
- .orangeBg {
-	 background-color: #feb44e;
- }
- .green{
-	 background-color: #35ad7e;
- }
- .pink{
-	 background-color: #e54673;
- }
- .purple{
-	 color: #4b49b2;
- }
- .yellow{
-	 color: #fed34e;
- }
-
