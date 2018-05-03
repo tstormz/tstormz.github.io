@@ -207,7 +207,7 @@
  }
  footer ul {
 	 color: #111;
-	 padding: 2.618em;
+	 padding: 2.618em 0;
 	 position: fixed;
 	 bottom: 0;
 	 z-index: -1;
@@ -225,3 +225,74 @@
  footer li span img {
  	vertical-align: middle;
  }
+
+ @media only screen and (max-width: 900px) {
+	header {
+		position: static;
+	}
+
+	.container, section#welcome div#contact, section#welcome div {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	header h1 {
+		font-size: 2.0225em;
+		padding: 1.0em;
+		width: auto;
+	}
+
+	header li a {
+		font-size: 1em;
+		padding: 1em;
+	}
+
+	section#welcome h2 {
+		padding-top: 1em;
+		text-align: center;
+	}
+
+	p {
+		margin: 0 2.618em;
+	}
+
+	section#aboutMe {
+		padding: 0;
+	}
+
+	div#contact li {
+		display: inline-block;
+		padding: 2.618em 8% 0;
+	}
+
+	section#aboutMe div, section#projects div {
+		float: none;
+		width: 100%;
+	}
+
+	section#aboutMe ul {
+		list-style-type: none;
+	}
+
+	#aboutMe li {
+		padding: 0 15%;
+	}
+
+	section#aboutMe p {
+		padding: 0 10% 2.618em;
+	}
+	
+	section#courses .splitPane {
+		display: block;
+		width: 100%;
+	}
+
+	footer.orangeBg {
+		height: 23em;
+	}
+
+	footer span {
+		display: block;
+	}
+}
