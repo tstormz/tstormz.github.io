@@ -29,42 +29,45 @@
 			</div>
 		</header>
 		<div id='wrapper'>
-		<section id='welcome' class='container clearfix'>
-			<div>
-				<h2 style='color: #feb44e'>Software Engineer</h2>
-			</div>
-			<div>
-				<p style='text-align:justify'>
-					<img id='avatar' src='images/github_profile_sm.jpg' />
-					Hello, there! I am a Software Engineer working in the Syracuse, NY area. I started off as a Java developer working on desktop GUIs. Now I'm at <a href='http://gryphonsensors.com'>Gryphon Sensors</a> working on anything from writing C++ business logic to full stack web app development. I enjoy the fast paced work environment at Gryphon, and have really broadened my skill set. In my spare time I like to build iOS mobile apps. In the future I plan to lead a team of software engineers.</p>
-			</div>
-			<div id='contact'>
-				<ul>
-					<li><a href='https://github.com/tstormz'><img src='images/GitHub-Mark-Light-64px.png' alt='github' /></a></li>
-					<li><a href='mailto:hafner@oswego.edu'><img src='images/Gmail-icon.png' alt='gmail' /></a></li>
-					<li><a href='https://www.linkedin.com/in/travis-hafner-58548930'><img src='images/In-White-66px-R.png' alt='linkedin' style='height:24px' /></a></li>
-				</ul>
+		<section id='welcome' class='clearfix'>
+			<div class='container'>
+				<div class='col-md-11'>
+					<h2 class='orange title'>Software Engineer</h2>
+				</div>
+				<div class='col-md-1'></div>
+				<div class='col-md-11'>
+					<p id='bio' style='text-align:justify'>
+						<img id='avatar' src='images/github_profile_sm.jpg' />
+						Hello, there! I am a Software Engineer working in the Syracuse, NY area. I started off as a Java developer working on desktop GUIs. Now I'm at <a href='http://gryphonsensors.com'>Gryphon Sensors</a> working on anything from writing C++ business logic to full stack web app development. I enjoy the fast paced work environment at Gryphon, and have really broadened my skill set. In my spare time I like to build iOS mobile apps. In the future I plan to lead a team of software engineers.</p>
+				</div>
+				<div class='col-md-1' id='contact'>
+					<ul>
+						<li><a href='https://github.com/tstormz'><img src='images/GitHub-Mark-Light-64px.png' alt='github' /></a></li>
+						<li><a href='mailto:hafner@oswego.edu'><img src='images/Gmail-icon.png' alt='gmail' /></a></li>
+						<li><a href='https://www.linkedin.com/in/travis-hafner-58548930'><img src='images/In-White-66px-R.png' alt='linkedin' style='height:24px' /></a></li>
+					</ul>
+				</div>
 			</div>
 		</section>
 		<section id='aboutMe' class='container clearfix'>
-			<h2>Learn More About Me</h2>
-			<div>
+			<h2 class='title'>Learn More About Me</h2>
+			<div class='col-lg-4'>
 				<img src='images/wrench.png'>
-				<h3>Skills</h3>
+				<h3 class='title'>Skills</h3>
 				<ul>
 					<li>Work experience with programming languages such as Java, C/C++, Python, JavaScript, and Ruby</li>
 					<li>Familiarity with frameworks like Rails, React, and JUnit</li>
 					<li>Not too shabby with Linux tools and concepts</li>
 				</ul>
 			</div>
-			<div>
+			<div class='col-lg-4'>
 				<img src='images/diamond.png'>
-				<h3>Style</h3>
+				<h3 class='title'>Style</h3>
 				<p>I am a strong believer in the DRY principle of software development. I prefer explicit typing over inference when it improves readability. I like comments. I like eclipse with the vim plugin.</p>
 			</div>
-			<div>
+			<div class='col-lg-4'>
 				<img src='images/pie-chart.png'>
-				<h3>Activity</h3>
+				<h3 class='title'>Activity</h3>
 				<ul>
 					<li>Dean's list Spring 2014, Fall 2014, and Fall 2016</li>
 					<li>Member of the Computer Science Association and IEEE at SUNY Oswego</li>
@@ -72,7 +75,7 @@
 			</div>
 		</section>
 		<section id='courses'>
-			<h2>Some of the Subjects I Studied</h2>
+			<h2 class='title'>Some of the Subjects I Studied</h2>
 			<div class='widePane green'>
 				<div class='container'>
 					<h3>Computer Networking</h3>
@@ -83,37 +86,37 @@
 				</div>
 			</div>
 			<div id='biSection' class='container'>
-				<div class='splitPane'>
-					<h3 class='purple'>Data Structures &amp; Algorithms</h3>
+				<div class='col-lg-6'>
+					<h3 class='purple title'>Data Structures &amp; Algorithms</h3>
 					<p>This was my first experience with low level programming. We started with an introduction to bit manipulation by studying the BitSet data structure, which prepared us for examining hash functions. From there we looked at balanced trees like Red Black trees and the BTree, which we <a href='https://github.com/tstormz/BTree'>created from scatch as a project</a>. Lastly, we looked at graphs and graph algorithms like Dijkstra's spanning tree.</p>
 				</div>
-				<div class='splitPane'>
-					<h3 class='yellow'>Parallel Computing</h3>
+				<div class='col-lg-6'>
+					<h3 class='yellow title'>Parallel Computing</h3>
 					<p>This was a very challenging course, we started off with lock construction and worked our way to cluster computing. We discussed Compare and Set, Semaphores, race conditions, liveness and starvation, memory models, work stealing with fork/join, and benchmarking to analyze performance. As a final project I found peg solitaire move suggestions by trying every possible move.</p>
 				</div>
 			</div>
 			<div class='widePane pink'>
 				<div class='container'>
-					<h3>System Programming</h3>
+					<h3 class='title'>System Programming</h3>
 					<p>This course studied computer architecture but with a focus on software and operating systems. We first looked at the binary representation of IEEE Standard for floating point arithmitic. Secondly, we looked at reading assembly code generated by the C compiler, and used <a href='https://www.sourceware.org/gdb/'>gdb</a> to solve a series of puzzles known as the infamous <a href='http://csapp.cs.cmu.edu/2e/README-bomblab'>bomb lab</a>. After that nightmare, I completed the <a href='https://github.com/tstormz/CacheLab'>Cache Lab</a> that simulated hits and misses from a cache line. One of the more useful thing I learned, however, was how to use a bit mask to extract the bits of interest. Lastly, we looked at system processes and wrote a tiny shell, learning about signal interrupts, PIDs, background tasks, forking/reaping, and memory management.</p>
 				</div>
 			</div>
 		</section>
 		<section id='projects' class='container clearfix'>
-			<h2>Other Noteworthy Projects</h2>
-			<div>
+			<h2 class='title'>Other Noteworthy Projects</h2>
+			<div class='col-lg-4'>
 				<img src='images/c-logo-icon-28389.png' alt='C++' />
-				<h3>Airborne-CPS</h3>
+				<h3 class='title'>Airborne-CPS</h3>
 				<p><a href='http://www.x-plane.com/'>X-Plane</a> plugin to provide a <a href='https://en.wikipedia.org/wiki/Traffic_collision_avoidance_system'>Traffic Collision Avoidance System</a> (TCAS) simulation written in C++. The plugin displays intruding aircraft on a graphical radar gauge, calculates a point of collision, and provides vertical speed recommendations.</p>
 			</div>
-			<div>
+			<div class='col-lg-4'>
 				<img src='images/ruby.png' alt='ruby' style='height:48px;padding:8px 0' />
-				<h3>TRAID</h3>
+				<h3 class='title'>TRAID</h3>
 				<p>A management system for tracking products/customers for the NYS Technology Assistance Program (TRAID). Data is stored using SQLite and a relational database schema. The system is written in Ruby using the Rails framework.</p>
 			</div>
-			<div>
+			<div class='col-lg-4'>
 				<img src='images/java-logo-vector.png' alt='java' />
-				<h3>MiniJava</h3>
+				<h3 class='title'>MiniJava</h3>
 				<p>A compiler for a smaller version of Java as specified by the <a href='http://www.cambridge.org/resources/052182060X/MCIIJ2e/grammar.htm'>Mini Java Grammar</a>, using <a href='https://github.com/antlr/antlr4'>Antlr4</a> for AST construction and <a href='http://jasmin.sourceforge.net/'>Jasmin</a> for code generation. Built in optionals for all data types were added as a language extension.</p>
 			</div>
 		</section>
@@ -138,3 +141,4 @@
 		</footer>
 	</body>
 </html>
+
